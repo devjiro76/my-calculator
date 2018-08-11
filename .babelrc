@@ -17,6 +17,7 @@
         "regenerator": true
       }
     ],
+    "transform-async-to-generator",
     "transform-object-rest-spread",
     "transform-es3-property-literals",
     "transform-es3-member-expression-literals"
