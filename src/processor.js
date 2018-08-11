@@ -43,7 +43,7 @@ class Processor {
 
     if (type === "number") {
       if (this.isCalcurated) {
-        throw new Error("Please Click the +,-,*,/ before Number");
+        throw new Error("NOTNUMBER");
       } else {
         this.tempNumber += value;
       }
@@ -51,7 +51,13 @@ class Processor {
   }
 
   calc() {
-    return this.que.reduce((x, func) => func(x), 1);
+    return this.que.reduce((x, func) => {
+      const res = func(x);
+      if (res > 9999999999) {
+        throw new Error("BIG");
+      }
+      return res;
+    }, 1);
   }
 
   _createProc(func, number) {
