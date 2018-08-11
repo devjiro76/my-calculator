@@ -1,4 +1,24 @@
 {
-  "plugins": ["add-module-exports", ["transform-es2015-modules-umd"]],
-  "moduleId": "calcurator"
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "safari >= 7", "ie >= 8"]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    "transform-object-rest-spread",
+    "transform-es3-property-literals",
+    "transform-es3-member-expression-literals"
+  ]
 }
