@@ -9,6 +9,16 @@ module.exports = {
     filename: "app.js",
     sourceMapFilename: "app.js.map"
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        include: [path.resolve(__dirname, "src")],
+        exclude: [path.resolve(__dirname, "node_modules")]
+      }
+    ]
+  },
   devtool: "inline-source-map",
   resolve: {
     modules: [path.resolve("./node_modules")],
