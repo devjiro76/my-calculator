@@ -1,4 +1,4 @@
-.calcurator.dark {
+.calculator.dark {
   border: 1px solid black;
   box-sizing: border-box;
   margin: 15px;
@@ -89,7 +89,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1 );
 }
 
-.calcurator.dark .top {
+.calculator.dark .top {
   display: flex;
   width: 100%;
   height: 80px;
@@ -97,21 +97,21 @@
   justify-content: flex-end;
 }
 
-.calcurator.dark .top .display {
+.calculator.dark .top .display {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   justify-content: flex-end;
 }
 
-.calcurator.dark .top .help {
+.calculator.dark .top .help {
   text-align: right;
   color: gray;
   font-size: small;
   height: 20px;
 }
 
-.calcurator.dark .display .result {
+.calculator.dark .display .result {
   background-color: green;
   color: white;
   text-align: right;
@@ -119,7 +119,7 @@
   font-style: italic;
 }
 
-.calcurator.dark .top .functions {
+.calculator.dark .top .functions {
   display: flex;
   flex: 0 1 auto;
   margin-left: 15px;
@@ -128,21 +128,21 @@
   align-items: flex-end;
 }
 
-.calcurator.dark .functions button {
+.calculator.dark .functions button {
   background-color: #333;
   color: red;
   min-width: 50px;
   min-height: 50px;
 }
 
-.calcurator.dark .numbers .row {
+.calculator.dark .numbers .row {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.calcurator.dark .numbers button {
+.calculator.dark .numbers button {
   flex: 0 1 auto;
   background-color: yellow;
   color: gray;

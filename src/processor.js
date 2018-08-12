@@ -3,7 +3,7 @@ class Processor {
     this.que = [];
     this.cache = [];
 
-    this.isCalcurated = false;
+    this.isCalculated = false;
     this.tempNumber = "";
     this.tempFunc = "";
   }
@@ -12,7 +12,7 @@ class Processor {
     this.que = [];
     this.tempNumber = "";
     this.tempFunc = "";
-    this.isCalcurated = false;
+    this.isCalculated = false;
   }
 
   input(par) {
@@ -31,18 +31,18 @@ class Processor {
 
       if (value !== "calc") {
         this.tempFunc = value;
-        this.isCalcurated = false;
+        this.isCalculated = false;
       } else {
-        if (this.isCalcurated) {
+        if (this.isCalculated) {
           this.que.push(this.que[this.que.length - 1]);
         }
-        this.isCalcurated = true;
+        this.isCalculated = true;
         return this.calc();
       }
     }
 
     if (type === "number") {
-      if (this.isCalcurated) {
+      if (this.isCalculated) {
         throw new Error("NOTNUMBER");
       } else {
         this.tempNumber += value;

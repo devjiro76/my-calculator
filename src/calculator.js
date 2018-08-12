@@ -1,6 +1,6 @@
 import Processor from "./Processor";
 
-class Calcurator {
+class Calculator {
   constructor(par) {
     this.calc = new Processor();
     this.init(par);
@@ -41,7 +41,7 @@ class Calcurator {
 
     const wrapper = document.createElement("div");
     wrapper.innerHTML = htmlContent;
-    wrapper.querySelector(".calcurator").classList.add(template);
+    wrapper.querySelector(".calculator").classList.add(template);
     this.base.appendChild(wrapper);
     this.wrapper = wrapper;
 
@@ -117,7 +117,7 @@ class Calcurator {
           }
 
           if (e.message === "BIG") {
-            message = "Calcurator can handle under 9999999999";
+            message = "Calculator can handle under 9999999999";
             this.result.innerText = this.prettyFloat(9999999999);
           }
 
@@ -145,4 +145,4 @@ class Calcurator {
   }
 }
 
-export default Calcurator;
+export default Calculator;

@@ -1,1 +1,1 @@
-# my-calcurator
+# my-calculator
